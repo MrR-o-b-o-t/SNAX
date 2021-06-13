@@ -6,35 +6,60 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: "black",
   },
   doubleHero: {
+    minHeight: "800px",
     flexGrow: "1",
     backgroundColor: "black",
     color: "white",
     textAlign: "center",
-    paddingBottom: "30px",
+    display: "flex",
+    alignItems: "center",
   },
   imgBannerDiv: {
-    margin: "340px 0 0 30px",
+    margin: "0 0 0 0",
+    width: "100%",
   },
-  imgBanner: {
+  imgBannerDivOne: {
+    height: "850px",
+    width: "100%",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundAttachment: "fixed",
+    backgroundImage: `URL("https://snaxmedia.com/wp-content/uploads/2020/12/G-Tech-Arkansas-Hunting-Trip-2.jpg")`,
+  },
+  imgBannerDivTwo: {
+    height: "850px",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundAttachment: "fixed",
+    backgroundImage: `URL("https://www.snaxmedia.com/wp-content/uploads/2020/07/Pelagic-Color-283.jpg")`,
+  },
+  imgBannerDivThree: {
+    height: "850px",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundAttachment: "fixed",
+    backgroundImage: `URL("https://www.snaxmedia.com/wp-content/uploads/2020/07/Cherry-Coatings-001.jpg")`,
+  },
+  imgBannerDivFour: {
     height: "850px",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundAttachment: "fixed",
     backgroundImage: `URL("https://snaxmedia.com/wp-content/uploads/2020/07/Superior-Pool-Service-001.jpg")`,
   },
-  imgBanner2: {
+  imgBannerDivFive: {
     height: "850px",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundAttachment: "fixed",
-    backgroundImage: `URL("https://snaxmedia.com/wp-content/uploads/2020/07/Superior-Pool-Service-001.jpg")`,
+    backgroundImage: `URL("https://www.snaxmedia.com/wp-content/uploads/2020/07/City-Square-001.jpg")`,
   },
-  imgBanner3: {
+  imgBannerDivSix: {
     height: "850px",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundAttachment: "fixed",
-    backgroundImage: `URL("https://snaxmedia.com/wp-content/uploads/2020/07/Superior-Pool-Service-001.jpg")`,
+    backgroundImage: `URL("https://www.snaxmedia.com/wp-content/uploads/2020/07/Genesis-Systems.jpg")`,
   },
   footer: {
     textAlign: "center",
@@ -45,8 +70,6 @@ const useStyles = makeStyles(theme => ({
     color: "white",
     padding: "2rem 0 2rem 0",
     width: "100%",
-    position: "fixed",
-    bottom: "0",
   },
   paper: {
     padding: theme.spacing(2),
@@ -67,30 +90,27 @@ const useStyles = makeStyles(theme => ({
     fontWeight: "bold",
   },
   homeContainer: {
-    paddingTop: "200px",
     backgroundImage: `URL(
       "https://snaxmedia.com/wp-content/uploads/2021/04/SNAX-Media-Banner.jpg"
     )`,
     backgroundSize: "cover",
     backgroundPosition: "center center",
     color: "white",
-    height: "900px",
+    minHeight: "1200px",
+    display: "flex",
+    alignItems: "center",
   },
-  headerCards: {
-    // display: "flex",
-    paddingTop: "100px",
-  },
-  mainButton: {
-    margin: "30px",
-    backgroundColor: "white",
-    color: "black",
-    fontWeight: "bold",
-    borderRadius: "0",
-    "&:hover": {
-      backgroundColor: "black",
-      color: "white",
-    },
-  },
+  headerCards: {},
+  // mainButton: {
+  //   margin: "20px 0 0 0",
+  //   backgroundColor: "white",
+  //   color: "black",
+  //   fontWeight: "bold",
+  //   "&:hover": {
+  //     backgroundColor: "black",
+  //     color: "white",
+  //   },
+  // },
 }))
 
 export default useStyles

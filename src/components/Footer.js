@@ -9,7 +9,13 @@ const Footer = () => {
       <Container className={classes.root}>
         <Grid container spacing={4} justify="center">
           <Grid item xs={12} sm={12} md={3}>
-            <Typography variant="h5">SnaxMEDIA</Typography>
+            <img
+              className={classes.title}
+              src="https://snaxmedia.com/wp-content/uploads/2020/06/Snax-Media-White-8-300x35.png"
+              style={{
+                marginBottom: "30px",
+              }}
+            />
             <Typography>214-307-2738</Typography>
             <Typography>info@snaxmedia.com</Typography>
             <Typography>14679 Midway Rd.</Typography>
