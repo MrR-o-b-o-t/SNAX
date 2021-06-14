@@ -14,6 +14,22 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     alignItems: "center",
   },
+  servicesHero: {
+    flexGrow: "1",
+    backgroundColor: "white",
+    color: "black",
+    textAlign: "center",
+    display: "flex",
+    alignItems: "center",
+  },
+  contactHero: {
+    flexGrow: "1",
+    backgroundColor: "white",
+    color: "black",
+    textAlign: "center",
+    display: "flex",
+    alignItems: "center",
+  },
   imgBannerDiv: {
     margin: "0 0 0 0",
     width: "100%",
@@ -97,6 +113,28 @@ const useStyles = makeStyles(theme => ({
     backgroundPosition: "center center",
     color: "white",
     minHeight: "1200px",
+    display: "flex",
+    alignItems: "center",
+  },
+  servicesContainer: {
+    backgroundImage: `URL(
+      "https://snaxmedia.com/wp-content/uploads/2020/09/Marketing-Services.jpg"
+    )`,
+    backgroundSize: "cover",
+    backgroundPosition: "center center",
+    color: "white",
+    minHeight: "700px",
+    display: "flex",
+    alignItems: "center",
+  },
+  contactContainer: {
+    backgroundImage: `URL(
+      "https://snaxmedia.com/wp-content/uploads/2021/01/Genesis-12-21-20-01.jpg"
+    )`,
+    backgroundSize: "cover",
+    backgroundPosition: "center center",
+    color: "white",
+    minHeight: "700px",
     display: "flex",
     alignItems: "center",
   },

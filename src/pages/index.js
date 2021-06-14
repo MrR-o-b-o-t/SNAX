@@ -53,7 +53,17 @@ export default function Home() {
           </Grid>
         </Grid>
       </Grid>
-      <DoubleHero />
+      <DoubleHero
+      // style={{
+      //   minHeight: "800px",
+      //   flexGrow: "1",
+      //   backgroundColor: "black",
+      //   color: "white",
+      //   textAlign: "center",
+      //   display: "flex",
+      //   alignItems: "center",
+      // }}
+      />
       <ImageBanner />
     </Layout>
   )
