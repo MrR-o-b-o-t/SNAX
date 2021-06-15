@@ -5,5 +5,14 @@
  */
 
 module.exports = {
-  plugins: [`gatsby-plugin-styled-components`],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-material-ui`,
+      options: {
+        stylesProvider: {},
+      },
+    },
+    `gatsby-plugin-styled-components`,
+    "gatsby-plugin-react-helmet",
+  ],
 }
