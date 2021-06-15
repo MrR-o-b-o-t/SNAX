@@ -104,6 +104,8 @@ const useStyles = makeStyles(theme => ({
     color: "white",
     padding: "10px",
     fontWeight: "bold",
+    fontSize: "18px",
+    fontFamily: "Montsterrat",
   },
   homeContainer: {
     backgroundImage: `URL(
@@ -112,7 +114,7 @@ const useStyles = makeStyles(theme => ({
     backgroundSize: "cover",
     backgroundPosition: "center center",
     color: "white",
-    minHeight: "1200px",
+    height: "100vh",
     display: "flex",
     alignItems: "center",
   },
@@ -138,17 +140,7 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     alignItems: "center",
   },
-  headerCards: {},
-  // mainButton: {
-  //   margin: "20px 0 0 0",
-  //   backgroundColor: "white",
-  //   color: "black",
-  //   fontWeight: "bold",
-  //   "&:hover": {
-  //     backgroundColor: "black",
-  //     color: "white",
-  //   },
-  // },
+  headerCards: { margin: "-500px 0 0 0" },
 }))
 
 export default useStyles

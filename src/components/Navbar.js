@@ -8,9 +8,42 @@ import IconButton from "@material-ui/core/IconButton"
 import MenuIcon from "@material-ui/icons/Menu"
 import useStyles from "../assets/css/styles"
 import Hidden from "@material-ui/core/Hidden"
+import Menu from "@material-ui/core/Menu"
+import MenuItem from "@material-ui/core/MenuItem"
+import { withStyles } from "@material-ui/core"
+import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown"
+
+const StyledMenu = withStyles({
+  paper: {
+    border: "1px solid #d3d4d5",
+  },
+})(props => (
+  <Menu
+    elevation={0}
+    getContentAnchorEl={null}
+    anchorOrigin={{
+      vertical: "bottom",
+      horizontal: "center",
+    }}
+    transformOrigin={{
+      vertical: "top",
+      horizontal: "center",
+    }}
+    {...props}
+  />
+))
 
 const Navbar = () => {
   const classes = useStyles()
+  const [anchorEl, setAnchorEl] = React.useState(null)
+
+  const handleClick = event => {
+    setAnchorEl(event.currentTarget)
+  }
+
+  const handleClose = () => {
+    setAnchorEl(null)
+  }
   return (
     <nav className="classes.root">
       <AppBar position="sticky" className={classes.navbar}>
@@ -25,9 +58,45 @@ const Navbar = () => {
             <Link className={classes.navLinks} to="/">
               WORK
             </Link>
-            <Link className={classes.navLinks} to="/about">
-              SERVICES
-            </Link>
+            <Button
+              aria-controls="simple-menu"
+              aria-haspopup="true"
+              onClick={handleClick}
+              className={classes.navLinks}
+            >
+              Services
+              <ArrowDropDownIcon />
+            </Button>
+            <StyledMenu
+              className={classes.navLinks}
+              id="simple-menu"
+              variant="menu"
+              anchorEl={anchorEl}
+              keepMounted
+              open={Boolean(anchorEl)}
+              onClose={handleClose}
+            >
+              <MenuItem onClick={handleClose}>
+                <Link className={classes.navLinks} to="/about">
+                  Website Design
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={handleClose}>
+                <Link className={classes.navLinks} to="/about">
+                  SEO
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={handleClose}>
+                <Link className={classes.navLinks} to="/about">
+                  Live Streaming
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={handleClose}>
+                <Link className={classes.navLinks} to="/about">
+                  Video Production
+                </Link>
+              </MenuItem>
+            </StyledMenu>
             <Link className={classes.navLinks} to="/contact">
               CONTACT
             </Link>

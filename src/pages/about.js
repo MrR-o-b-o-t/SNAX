@@ -8,7 +8,7 @@ import VideocamIcon from "@material-ui/icons/Videocam"
 import CssBaseline from "@material-ui/core/CssBaseline"
 import { ThemeProvider } from "@material-ui/core/styles"
 import theme from "../../src/theme"
-import MyButton from "../components/StyledButton"
+import StyledButton from "../components/StyledButton"
 
 export default function About() {
   const classes = useStyles()
@@ -45,9 +45,7 @@ export default function About() {
                 understand the goals of the organization. Once we grasp the
                 personality and goals our work begins.
               </Typography>
-              <Button color="primary" background="default">
-                Explore
-              </Button>
+              <StyledButton color="primary">Learn More</StyledButton>
             </Grid>
             <Grid item lg={6} md={6} xs={12}>
               <Typography variant="h4" align="center">
@@ -63,7 +61,7 @@ export default function About() {
                 and will want to support you because of the trust you have
                 established.
               </Typography>
-              <MyButton></MyButton>
+              <StyledButton color="primary">Learn More</StyledButton>
             </Grid>
           </Grid>
           <Grid container spacing={10}>
@@ -79,7 +77,7 @@ export default function About() {
                 online or in-store purchase. This trend in buying behavior
                 underlines the importance of the website for today’s businesses.
               </Typography>
-              <MyButton color="primary"></MyButton>
+              <StyledButton color="primary">Learn More</StyledButton>
             </Grid>
             <Grid item lg={6} md={6} xs={12}>
               <Typography variant="h4" align="center">
@@ -94,7 +92,7 @@ export default function About() {
                 trust with local customers, and all the best business
                 relationships are established on the basis of trust.
               </Typography>
-              <MyButton></MyButton>
+              <StyledButton color="primary">Learn More</StyledButton>
             </Grid>
           </Grid>
         </Container>

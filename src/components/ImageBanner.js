@@ -1,7 +1,7 @@
 import React from "react"
 import { Grid, Button, Container, Typography } from "@material-ui/core"
 import useStyles from "../assets/css/styles"
-import MyButton from "../components/StyledButton"
+import StyledButton from "../components/StyledButton"
 
 export default function ImageBanner() {
   const classes = useStyles()
@@ -24,7 +24,7 @@ export default function ImageBanner() {
               G-Tech Apparal
             </Typography>
             <hr />
-            <MyButton></MyButton>
+            <StyledButton color="secondary">View Project</StyledButton>
           </Grid>
         </Grid>
       </div>
@@ -41,7 +41,7 @@ export default function ImageBanner() {
               Pelagic Color Fishing Companyl
             </Typography>
             <hr />
-            <MyButton></MyButton>
+            <StyledButton color="secondary">View Project</StyledButton>
           </Grid>
         </Grid>
       </div>
@@ -58,7 +58,7 @@ export default function ImageBanner() {
               Cherry Coatings
             </Typography>
             <hr />
-            <MyButton></MyButton>
+            <StyledButton color="secondary">View Project</StyledButton>
           </Grid>
         </Grid>
       </div>
@@ -75,7 +75,7 @@ export default function ImageBanner() {
               City Square
             </Typography>
             <hr />
-            <MyButton></MyButton>
+            <StyledButton color="secondary">View Project</StyledButton>
           </Grid>
         </Grid>
       </div>
@@ -92,7 +92,7 @@ export default function ImageBanner() {
               Genesis Systems
             </Typography>
             <hr />
-            <MyButton></MyButton>
+            <StyledButton color="secondary">View Project</StyledButton>
           </Grid>
         </Grid>
       </div>

@@ -5,7 +5,7 @@ import ImageBanner from "../components/ImageBanner"
 import { Grid, Button, Typography } from "@material-ui/core"
 import useStyles from "../assets/css/styles"
 import VideocamIcon from "@material-ui/icons/Videocam"
-import MyButton from "../components/StyledButton"
+import StyledButton from "../components/StyledButton"
 
 export default function Home() {
   const classes = useStyles()
@@ -49,19 +49,15 @@ export default function Home() {
             </Typography>
           </Grid>
           <Grid item xs={12}>
-            <MyButton></MyButton>
+            <StyledButton variant="contained" color="secondary">
+              View Our Work
+            </StyledButton>
           </Grid>
         </Grid>
       </Grid>
       <DoubleHero
       // style={{
-      //   minHeight: "800px",
-      //   flexGrow: "1",
-      //   backgroundColor: "black",
-      //   color: "white",
-      //   textAlign: "center",
-      //   display: "flex",
-      //   alignItems: "center",
+      //   marginTop: "-500px",
       // }}
       />
       <ImageBanner />

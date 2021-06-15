@@ -10,7 +10,7 @@ import {
 } from "@material-ui/core"
 import useStyles from "../assets/css/styles"
 import VideocamIcon from "@material-ui/icons/Videocam"
-import MyButton from "../components/StyledButton"
+import StyledButton from "../components/StyledButton"
 
 export default function Contact() {
   const classes = useStyles()
@@ -80,12 +80,10 @@ export default function Contact() {
             />
             <TextField id="filled-basic" label="Web Address" variant="filled" />
             <TextField id="filled-basic" label="Message" variant="filled" />
-            <MyButton></MyButton>
           </FormGroup>
+          <StyledButton color="primary">Send</StyledButton>
         </Grid>
-        <Grid item lg={6} md={6} xs={12}>
-          <MyButton></MyButton>
-        </Grid>
+        <Grid item lg={6} md={6} xs={12}></Grid>
       </Grid>
     </Layout>
   )

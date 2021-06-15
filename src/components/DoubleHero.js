@@ -1,7 +1,7 @@
 import React from "react"
 import { Grid, Button, Container, Typography } from "@material-ui/core"
 import useStyles from "../assets/css/styles"
-import MyButton from "../components/StyledButton"
+import StyledButton from "../components/StyledButton"
 
 export default function DoubleHero() {
   const classes = useStyles()
@@ -54,14 +54,14 @@ export default function DoubleHero() {
           />
         </Grid>
         <Grid item lg={6} md={6} xs={12}>
-          <Typography>Project Inquiry</Typography>
+          <Typography variant="h4">Project Inquiry</Typography>
           <Typography variant="subtitle2" align="center">
             Let us know a little bit about your business, what kind of project
             you have in mind, and we will get back to you to set up a call or
             face-to-face meeting to learn more about you and your business and
             discuss in more detail how we can help you.
           </Typography>
-          <MyButton></MyButton>
+          <StyledButton color="secondary">Contact SNAX</StyledButton>
         </Grid>
       </Grid>
     </Container>
