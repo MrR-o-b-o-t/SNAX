@@ -3,6 +3,9 @@ import { red } from "@material-ui/core/colors"
 
 // A custom theme for this app
 const theme = createMuiTheme({
+  root: {
+    flexGrow: 1,
+  },
   palette: {
     primary: {
       main: "#212121",

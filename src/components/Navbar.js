@@ -1,16 +1,18 @@
 import React from "react"
 import { Link } from "gatsby"
-import AppBar from "@material-ui/core/AppBar"
-import Toolbar from "@material-ui/core/Toolbar"
-import Typography from "@material-ui/core/Typography"
-import Button from "@material-ui/core/Button"
-import IconButton from "@material-ui/core/IconButton"
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Button,
+  IconButton,
+  Hidden,
+  Menu,
+  MenuItem,
+  withStyles,
+} from "@material-ui/core"
 import MenuIcon from "@material-ui/icons/Menu"
 import useStyles from "../assets/css/styles"
-import Hidden from "@material-ui/core/Hidden"
-import Menu from "@material-ui/core/Menu"
-import MenuItem from "@material-ui/core/MenuItem"
-import { withStyles } from "@material-ui/core"
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown"
 
 const StyledMenu = withStyles({
@@ -77,12 +79,12 @@ const Navbar = () => {
               onClose={handleClose}
             >
               <MenuItem onClick={handleClose}>
-                <Link className={classes.navLinks} to="/about">
+                <Link className={classes.navLinks} to="/design">
                   Website Design
                 </Link>
               </MenuItem>
               <MenuItem onClick={handleClose}>
-                <Link className={classes.navLinks} to="/about">
+                <Link className={classes.navLinks} to="/seo">
                   SEO
                 </Link>
               </MenuItem>

@@ -14,6 +14,20 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     alignItems: "center",
   },
+  design: {
+    flexGrow: "1",
+    color: "black",
+    textAlign: "center",
+    display: "flex",
+    alignItems: "center",
+  },
+  headerGrid: {
+    height: "550px",
+    color: "white",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundImage: `URL("https://snaxmedia.com/wp-content/uploads/2020/07/SEO-Banner-Background.jpg")`,
+  },
   servicesHero: {
     flexGrow: "1",
     backgroundColor: "white",
@@ -32,11 +46,9 @@ const useStyles = makeStyles(theme => ({
   },
   imgBannerDiv: {
     margin: "0 0 0 0",
-    width: "100%",
   },
   imgBannerDivOne: {
     height: "850px",
-    width: "100%",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundAttachment: "fixed",
@@ -85,7 +97,6 @@ const useStyles = makeStyles(theme => ({
     background: "black",
     color: "white",
     padding: "2rem 0 2rem 0",
-    width: "100%",
   },
   paper: {
     padding: theme.spacing(2),
@@ -97,7 +108,6 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     flexGrow: 1,
-    width: "200px",
   },
   navLinks: {
     textDecoration: "none",
