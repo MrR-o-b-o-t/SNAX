@@ -1,14 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
-import {
-  Grid,
-  Button,
-  TextField,
-  Container,
-  Typography,
-  FormGroup,
-  Box,
-} from "@material-ui/core"
+import { Grid, Typography } from "@material-ui/core"
 import useStyles from "../assets/css/styles"
 import StyledButton from "../components/StyledButton"
 

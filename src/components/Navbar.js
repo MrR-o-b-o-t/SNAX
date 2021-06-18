@@ -89,7 +89,7 @@ const Navbar = () => {
                 </Link>
               </MenuItem>
               <MenuItem onClick={handleClose}>
-                <Link className={classes.navLinks} to="/about">
+                <Link className={classes.navLinks} to="/streaming">
                   Live Streaming
                 </Link>
               </MenuItem>

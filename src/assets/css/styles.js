@@ -28,6 +28,13 @@ const useStyles = makeStyles(theme => ({
     backgroundRepeat: "no-repeat",
     backgroundImage: `URL("https://snaxmedia.com/wp-content/uploads/2020/07/SEO-Banner-Background.jpg")`,
   },
+  streamHeaderGrid: {
+    height: "800px",
+    color: "white",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundImage: `URL("https://snaxmedia.com/wp-content/uploads/2020/08/Live-Stream-Wedding-BG.jpg")`,
+  },
   servicesHero: {
     flexGrow: "1",
     backgroundColor: "white",

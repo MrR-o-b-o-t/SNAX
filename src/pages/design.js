@@ -1,14 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
-import {
-  Grid,
-  Button,
-  TextField,
-  Container,
-  Typography,
-  FormGroup,
-  Box,
-} from "@material-ui/core"
+import { Grid, Container, Typography } from "@material-ui/core"
 import useStyles from "../assets/css/styles"
 import StyledButton from "../components/StyledButton"
 
@@ -16,39 +8,45 @@ export default function Design() {
   const classes = useStyles()
   return (
     <Layout>
-      <Grid container className={classes.design}>
-        <Grid container>
-          <Grid item xs={12}>
-            <Typography variant="h2" align="center">
-              We Create Websites That Work For You
-            </Typography>
-          </Grid>
+      <Container className={classes.design} maxWidth="false">
+        <Grid item xs={12}>
+          <Typography variant="h2" align="center">
+            We Create Websites That Work For You
+          </Typography>
         </Grid>
-        {/* TOP CONTACT GRID WITH CONTACT INFO */}
         <Grid
           container
-          spacing={10}
           style={{
-            padding: "70px 100px 0 100px",
+            padding: "70px 120px 0 100px",
           }}
         >
+          {/* TOP CONTACT GRID WITH CONTACT INFO */}
           <Grid item lg={6} md={6} xs={12}>
             <img
+              style={{
+                maxWidth: "500px",
+              }}
               // className={classes.title}
               src="https://snaxmedia.com/wp-content/uploads/2020/12/Fortress-Mockups-2.jpg"
             />
           </Grid>
-          <Grid item lg={6} md={6} xs={12} align="left">
-            <Typography variant="h4">Creative Design</Typography>
-            <Typography variant="subtitle1">
+          <Grid item lg={6} md={6} xs={12}>
+            <Typography variant="h4" align="left">
+              Creative Design
+            </Typography>
+            <Typography variant="subtitle1" align="left">
               Showcase your business online with a professional website, online
               store, or portfolio. With Snax Media, you can take your brick and
               mortar business and create a thriving online storefront.
             </Typography>
-            <Grid item lg={6} md={6} xs={12} align="left">
-              <Typography variant="subtitle1">FRONTEND DESIGN</Typography>
-              <Typography variant="subtitle1">BRAND DESIGN</Typography>
-              <Typography variant="subtitle1">
+            <Grid item lg={6} md={6} xs={12}>
+              <Typography variant="subtitle1" align="left">
+                FRONTEND DESIGN
+              </Typography>
+              <Typography variant="subtitle1" align="left">
+                BRAND DESIGN
+              </Typography>
+              <Typography variant="subtitle1" align="left">
                 DESIGN USER EXPERIENCE
               </Typography>
             </Grid>
@@ -56,30 +54,37 @@ export default function Design() {
         </Grid>
         <Grid
           container
-          spacing={10}
           style={{
             padding: "70px 100px 0 100px",
           }}
         >
-          <Grid item lg={6} md={6} xs={12} align="left">
-            <Typography variant="h4">Development</Typography>
-            <Typography variant="subtitle1">
+          <Grid item lg={6} md={6} xs={12}>
+            <Typography variant="h4" align="left">
+              Development
+            </Typography>
+            <Typography variant="subtitle1" align="left">
               Most businesses aren’t cookie-cutter. Your website shouldn’t be
               either. Our background in e-commerce, logo design, copywriting,
               programming, and business development means we can approach each
               project with a talented team who ensures your website is uniquely
               yours.
             </Typography>
-            <Grid item lg={6} md={6} xs={12} align="left">
-              <Typography variant="subtitle1">WEB DEVELOPMENT</Typography>
-              <Typography variant="subtitle1">MOBILE DEVELOPMENT</Typography>
-              <Typography variant="subtitle1">DATA & ANALYTICS</Typography>
+            <Grid item lg={6} md={6} xs={12}>
+              <Typography variant="subtitle1" align="left">
+                WEB DEVELOPMENT
+              </Typography>
+              <Typography variant="subtitle1" align="left">
+                MOBILE DEVELOPMENT
+              </Typography>
+              <Typography variant="subtitle1" align="left">
+                DATA & ANALYTICS
+              </Typography>
             </Grid>
           </Grid>
           <Grid item lg={6} md={6} xs={12}>
             <img
               style={{
-                maxWidth: "600px",
+                maxWidth: "500px",
               }}
               // className={classes.title}
               src="https://snaxmedia.com/wp-content/uploads/2020/12/Pelagic-Color-Desktop.jpg"
@@ -88,7 +93,6 @@ export default function Design() {
         </Grid>
         <Grid
           container
-          spacing={10}
           style={{
             padding: "70px 100px 0 100px",
           }}
@@ -129,7 +133,6 @@ export default function Design() {
         {/* BOTTOM CONTACT GRID WITH CONTACT FORM AND MAP */}
         <Grid
           container
-          spacing={10}
           align="center"
           style={{
             padding: "100px 100px 50px 100px",
@@ -140,7 +143,7 @@ export default function Design() {
             <StyledButton color="primary">Click Here</StyledButton>
           </Grid>
         </Grid>
-      </Grid>
+      </Container>
     </Layout>
   )
 }
