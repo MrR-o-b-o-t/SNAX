@@ -1,15 +1,23 @@
 import { makeStyles } from "@material-ui/core/styles"
 
 const useStyles = makeStyles(theme => ({
-  root: { flexGrow: "1" },
+  root: {
+    flexGrow: "1",
+  },
   navbar: {
     backgroundColor: "black",
   },
   doubleHero: {
-    minHeight: "800px",
     flexGrow: "1",
     backgroundColor: "black",
     color: "white",
+    textAlign: "center",
+    display: "flex",
+    alignItems: "center",
+  },
+  streamingContainer: {
+    flexGrow: "1",
+    backgroundColor: "white",
     textAlign: "center",
     display: "flex",
     alignItems: "center",
@@ -131,7 +139,7 @@ const useStyles = makeStyles(theme => ({
     backgroundSize: "cover",
     backgroundPosition: "center center",
     color: "white",
-    height: "100vh",
+    minHeight: "900px",
     display: "flex",
     alignItems: "center",
   },
@@ -157,7 +165,7 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     alignItems: "center",
   },
-  headerCards: { margin: "-500px 0 0 0" },
+  headerCards: {},
 }))
 
 export default useStyles
