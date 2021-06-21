@@ -66,7 +66,7 @@ const Navbar = () => {
               onClick={handleClick}
               className={classes.navLinks}
             >
-              Services
+              SERVICES
               <ArrowDropDownIcon />
             </Button>
             <StyledMenu
@@ -78,6 +78,11 @@ const Navbar = () => {
               open={Boolean(anchorEl)}
               onClose={handleClose}
             >
+              <MenuItem onClick={handleClose}>
+                <Link className={classes.navLinks} to="/about">
+                  Marketing Services
+                </Link>
+              </MenuItem>
               <MenuItem onClick={handleClose}>
                 <Link className={classes.navLinks} to="/design">
                   Website Design
